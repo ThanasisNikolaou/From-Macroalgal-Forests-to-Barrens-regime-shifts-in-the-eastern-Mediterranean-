@@ -102,7 +102,7 @@ Site-level survey data for Figure 2. Each row is one survey site (n = 60 sites; 
 
 Extended site-level dataset including temperature data and computed indices. Each row is one survey site (n = 60).
 
-> **Note:** The three temperature variables (annual average, minimum, and maximum SST) are **not included** in the shared dataset due to licensing restrictions. Annual average, minimum, and maximum sea surface temperature values were derived from the Copernicus Marine Service product `SST_MED_SST_L4_REP_OBSERVATIONS_010_021` (2016–2021). These data can be freely accessed at [https://data.marine.copernicus.eu](https://data.marine.copernicus.eu).
+> **Note:** The three temperature variables (annual average, minimum, and maximum SST) are downloaded from the Copernicus Marine Service product `SST_MED_SST_L4_REP_OBSERVATIONS_010_021` (2016–2021). These data can be freely accessed at [https://data.marine.copernicus.eu](https://data.marine.copernicus.eu).
 
 | Column | Units | Description |
 |--------|-------|-------------|
@@ -115,9 +115,9 @@ Extended site-level dataset including temperature data and computed indices. Eac
 | `sl` | ind/m² | Population density of *Siganus luridus* |
 | `sr` | ind/m² | Population density of *Siganus rivulatus* |
 | `sc` | ind/m² | Population density of *Sparisoma cretense* |
-| `avg_temp` | °C | ⚠️ NOT INCLUDED — Annual average SST (Copernicus, 2016–2021 mean) |
-| `min_temp` | °C | ⚠️ NOT INCLUDED — Annual minimum SST |
-| `max_temp` | °C | ⚠️ NOT INCLUDED — Annual maximum SST |
+| `avg_temp` | °C | Annual average SST (Copernicus, 2016–2021 mean) |
+| `min_temp` | °C | Annual minimum SST |
+| `max_temp` | °C | Annual maximum SST |
 | `CHI` | g consumed/day/m² | Cumulative Herbivory Index |
 | `CTI_med` | °C | Community Temperature Index (Mediterranean occurrence data; added by `03c`) |
 
@@ -179,9 +179,8 @@ Binned data derived from the main survey dataset. Sites are grouped into bins of
 
 ## Data and Code Availability
 
-The two primary datasets used in this study — `dataset_eastMed_reefs_abundance_density.csv` and `dataset_eastMed_reefs_BARPLOTS.xlsx` — are publicly available in the Dryad Digital Repository at: **[DRYAD DOI]**. These datasets are released under a [CC0 1.0 Public Domain Dedication](https://creativecommons.org/publicdomain/zero/1.0/).
 
-All R scripts required to reproduce the analyses and figures are available in the associated GitHub repository at: **[GITHUB URL]**. A permanently archived version of the repository, with a citable DOI, is available via Zenodo at: **[ZENODO DOI]**.
+All R scripts and datasets required to reproduce the analyses and figures are available in the associated Zenodo repository at: **[DOI: 10.5281/zenodo.20187921]**. 
 
 ---
 
